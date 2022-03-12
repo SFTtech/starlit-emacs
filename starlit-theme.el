@@ -1,4 +1,4 @@
-;;; starlit-theme.el --- A dark and colorful theme for Emacs.
+;;; starlit-theme.el --- Deep blue Emacs dark theme with bright colors from the starlit sky.   -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2022-2022
 
@@ -23,9 +23,9 @@
   (error "starlit theme requires modern theming from Emacs 24 or later!"))
 
 (deftheme starlit
-  "Starlit color theme - dark and colorful like beautiful starts of our universe.
+  "Starlit color theme - dark and colorful like beautiful stars of our universe.
 Starlit is a dark theme with a dark blue background,
-and foreground colors optimized for programming.")
+and foreground colors optimized for happy programming.")
 
 (defgroup starlit-theme nil
   "Starlit theme."
