@@ -1,9 +1,13 @@
-;;; starlit-theme.el --- Deep blue Emacs dark theme with bright colors from the starlit sky.   -*- lexical-binding: t -*-
+;;; starlit-theme.el --- Deep blue dark theme with bright colors from the starlit sky  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2022-2022
 
 ;; Author: Jonas Jelten <jj@sft.lol>
+;; Keywords: faces
 ;; URL: https://github.com/SFTtech/starlit-emacs
+;; Version: 0.1
+
+;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -18,9 +22,15 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+;;; Commentary:
 
-(unless (>= emacs-major-version 24)
-  (error "starlit theme requires modern theming from Emacs 24 or later!"))
+;; Starlit is a deep blue dark theme with brighter foreground colors like
+;; a starlit sky.
+
+;;; Code:
+
+(if (version< emacs-version "24.1")
+  (error "Starlit theme requires modern theming from Emacs 24 or later!"))
 
 (deftheme starlit
   "Starlit color theme - dark and colorful like beautiful stars of our universe.
@@ -39,8 +49,7 @@ and foreground colors optimized for happy programming.")
 
 (defvar starlit-default-colors nil
   "Alist of default Starlit colors.
-Each element has the form (NAME . HEX)."
-  )
+Each element has the form (NAME . HEX).")
 
 (setq starlit-default-colors
       '(("current-line"                . "#0a121a")
@@ -84,14 +93,15 @@ in the theme."
 
 
 (defcustom starlit-scale-headlines t
-  "Change the font size of headlines"
+  "Change the font size of headlines."
   :type 'boolean
   :group 'starlit-theme)
 
 
 (defmacro with-starlit-color-vars (&rest body)
-  "Wrap BODY with a `let' bind to all default colors from `starlit-default-colors`
-and overrides from `starlit-custom-colors'.
+  "Wraps `BODY' with a `let' bind defining all the theme base colors.
+It first picks default colors from `starlit-default-colors'
+and overrides them with `starlit-custom-colors'.
 These binds are then used as templates for the actual face definitions.
 For now, only support >= 256 color terminals :)"
   (declare (indent 0))
@@ -336,8 +346,7 @@ For now, only support >= 256 color terminals :)"
    `(whitespace-tab ((,colorful (:background nil :foreground ,selection))))
    `(whitespace-trailing ((,colorful (:foreground ,red :inverse-video t :underline nil))))
    `(widget-button ((,colorful (:underline t))))
-   `(widget-field ((,colorful (:background ,current-line :box (:line-width 1 :color ,foreground)))))
-   )
+   `(widget-field ((,colorful (:background ,current-line :box (:line-width 1 :color ,foreground))))))
 
   (custom-theme-set-variables
    'starlit
@@ -373,12 +382,11 @@ For now, only support >= 256 color terminals :)"
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'starlit)
-(provide 'starlit-theme)
+
 
 ;; Local Variables:
-;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; rainbow-mode: t
 ;; End:
 
-;;; startlit-theme.el ends here
+;;; starlit-theme.el ends here
