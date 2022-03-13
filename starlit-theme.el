@@ -103,6 +103,7 @@ in the theme."
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Face-Attributes.html
 
 (defun starlit-theme-setup ()
+  "Set up faces with colors from the starlit base and custom palette."
   ;; create local variable mappings
   (let ((colorful t)
         ;; convert the keys to internal variables
