@@ -99,6 +99,12 @@ in the theme."
   :group 'starlit-theme)
 
 
+(defcustom starlit-scale-org-headlines nil
+  "Change the font size of org-mode headlines."
+  :type 'boolean
+  :group 'starlit-theme)
+
+
 ;;; Mapping colors to Faces
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Defining-Faces.html
 ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Face-Attributes.html
@@ -266,6 +272,15 @@ in the theme."
        `(org-footnote ((,colorful (:foreground ,.aqua))))
        `(org-formula ((,colorful (:foreground ,.red))))
        `(org-hide ((,colorful (:foreground ,.background :background ,.background))))
+       `(org-level-1 ((,colorful (:inherit nil :foreground ,.bluelight ,@(when starlit-scale-org-headlines '(:height 1.3))))))
+       `(org-level-2 ((,colorful (:inherit nil :foreground ,.yellow ,@(when starlit-scale-org-headlines '(:height 1.2))))))
+       `(org-level-3 ((,colorful (:inherit nil :foreground ,.purple ,@(when starlit-scale-org-headlines '(:height 1.1))))))
+       `(org-level-4 ((,colorful (:inherit nil :foreground ,.aqua))))
+       `(org-level-5 ((,colorful (:inherit nil :foreground ,.orange))))
+       `(org-level-6 ((,colorful (:inherit nil :foreground ,.greenlight))))
+       `(org-level-7 ((,colorful (:inherit nil :foreground ,.type))))
+       `(org-level-8 ((,colorful (:inherit nil :foreground ,.bluehighlight))))
+       `(org-level-9 ((,colorful (:inherit nil :foreground ,.blue))))
        `(org-link ((,colorful (:foreground ,.blue :underline t))))
        `(org-meta-line ((,colorful (:inherit (fixed-pitch font-lock-comment-face) :foreground ,.bluedark))))
        `(org-ref-ref-face ((,colorful :underline t)))
@@ -281,9 +296,9 @@ in the theme."
        `(org-todo ((,colorful (:foreground ,.red))))
        `(org-upcoming-deadline ((,colorful (:foreground ,.orange))))
        `(org-warning ((,colorful (:weight bold :foreground ,.red))))
-       `(outline-1 ((,colorful (:inherit nil :foreground ,.bluelight ,@(when starlit-scale-headlines (list :height 1.3))))))
-       `(outline-2 ((,colorful (:inherit nil :foreground ,.yellow ,@(when starlit-scale-headlines (list :height 1.2))))))
-       `(outline-3 ((,colorful (:inherit nil :foreground ,.purple ,@(when starlit-scale-headlines (list :height 1.1))))))
+       `(outline-1 ((,colorful (:inherit nil :foreground ,.bluelight ,@(when starlit-scale-headlines '(:height 1.3))))))
+       `(outline-2 ((,colorful (:inherit nil :foreground ,.yellow ,@(when starlit-scale-headlines '(:height 1.2))))))
+       `(outline-3 ((,colorful (:inherit nil :foreground ,.purple ,@(when starlit-scale-headlines '(:height 1.1))))))
        `(outline-4 ((,colorful (:inherit nil :foreground ,.aqua))))
        `(outline-5 ((,colorful (:inherit nil :foreground ,.orange))))
        `(outline-6 ((,colorful (:inherit nil :foreground ,.greenlight))))
