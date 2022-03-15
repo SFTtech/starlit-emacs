@@ -93,14 +93,14 @@ in the theme."
           :value-type (string :tag "Hex")))
 
 
-(defcustom starlit-scale-headlines t
-  "Change the font size of headlines."
+(defcustom starlit-scale-outline-headlines t
+  "Increase the font size of `outline-mode' headlines."
   :type 'boolean
   :group 'starlit-theme)
 
 
 (defcustom starlit-scale-org-headlines nil
-  "Change the font size of org-mode headlines."
+  "Increase the font size of `org-mode' headlines."
   :type 'boolean
   :group 'starlit-theme)
 
@@ -266,7 +266,7 @@ in the theme."
        `(org-date ((,colorful (:foreground ,.blue :underline t))))
        `(org-document-info ((,colorful (:foreground ,.aqua))))
        `(org-document-info-keyword ((,colorful (:foreground ,.green))))
-       `(org-document-title ((,colorful (:weight bold :foreground ,.orange ,@(when starlit-scale-headlines (list :height 1.45))))))
+       `(org-document-title ((,colorful (:weight bold :foreground ,.orange :height 1.45))))
        `(org-done ((,colorful (:foreground ,.green))))
        `(org-ellipsis ((,colorful (:foreground ,.comment))))
        `(org-footnote ((,colorful (:foreground ,.aqua))))
@@ -296,9 +296,9 @@ in the theme."
        `(org-todo ((,colorful (:foreground ,.red))))
        `(org-upcoming-deadline ((,colorful (:foreground ,.orange))))
        `(org-warning ((,colorful (:weight bold :foreground ,.red))))
-       `(outline-1 ((,colorful (:inherit nil :foreground ,.bluelight ,@(when starlit-scale-headlines '(:height 1.3))))))
-       `(outline-2 ((,colorful (:inherit nil :foreground ,.yellow ,@(when starlit-scale-headlines '(:height 1.2))))))
-       `(outline-3 ((,colorful (:inherit nil :foreground ,.purple ,@(when starlit-scale-headlines '(:height 1.1))))))
+       `(outline-1 ((,colorful (:inherit nil :foreground ,.bluelight ,@(when starlit-scale-outline-headlines '(:height 1.3))))))
+       `(outline-2 ((,colorful (:inherit nil :foreground ,.yellow ,@(when starlit-scale-outline-headlines '(:height 1.2))))))
+       `(outline-3 ((,colorful (:inherit nil :foreground ,.purple ,@(when starlit-scale-outline-headlines '(:height 1.1))))))
        `(outline-4 ((,colorful (:inherit nil :foreground ,.aqua))))
        `(outline-5 ((,colorful (:inherit nil :foreground ,.orange))))
        `(outline-6 ((,colorful (:inherit nil :foreground ,.greenlight))))
