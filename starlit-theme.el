@@ -260,6 +260,7 @@ in the theme."
        `(message-header-subject ((,colorful (:inherit message-header-other :weight bold :foreground ,.yellow))))
        `(message-header-to ((,colorful (:inherit message-header-other :weight bold :foreground ,.orange))))
        `(message-separator ((,colorful (:foreground ,.purple))))
+       `(mmm-default-submode-face ((,colorful (:background ,.block))))
        `(org-agenda-date ((,colorful (:foreground ,.blue :underline nil))))
        `(org-agenda-dimmed-todo-face ((,colorful (:foreground ,.comment))))
        `(org-agenda-done ((,colorful (:foreground ,.green))))
