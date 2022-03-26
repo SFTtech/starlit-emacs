@@ -50,11 +50,12 @@ This path then needs to be loaded within your emacs config:
 Alternatively, this snippet discovers all theme directories in `~/.emacs.d/themes/`:
 
 ```elisp
-(let ((basedir "~/.emacs.d/themes/"))
-  (dolist (f (directory-files basedir))
-    (if (and (not (or (equal f ".") (equal f "..")))
-             (file-directory-p (concat basedir f)))
-        (add-to-list 'custom-theme-load-path (concat basedir f)))))
+(let ((basedir (locate-user-emacs-file "themes/")))
+  (when (file-directory-p basedir)
+    (dolist (f (directory-files basedir))
+      (if (and (not (or (equal f ".") (equal f "..")))
+               (file-directory-p (concat basedir f)))
+          (add-to-list 'custom-theme-load-path (concat basedir f))))))
 ```
 
 To load the theme, call `load-theme` interactively:
