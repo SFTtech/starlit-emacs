@@ -278,6 +278,7 @@ in the theme."
        `(org-footnote ((,colorful (:foreground ,.aqua))))
        `(org-formula ((,colorful (:foreground ,.red))))
        `(org-hide ((,colorful (:foreground ,.background :background ,.background))))
+       `(org-kbd ((,colorful (:foreground ,.background :background ,.shadow :box (:line-width 2 :color ,.shadow :style released-button)))))
        `(org-level-1 ((,colorful (:inherit nil :foreground ,.bluelight ,@(when starlit-scale-org-headlines '(:height 1.3))))))
        `(org-level-2 ((,colorful (:inherit nil :foreground ,.yellow ,@(when starlit-scale-org-headlines '(:height 1.2))))))
        `(org-level-3 ((,colorful (:inherit nil :foreground ,.purple ,@(when starlit-scale-org-headlines '(:height 1.1))))))
