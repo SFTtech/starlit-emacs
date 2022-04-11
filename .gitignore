@@ -1,0 +1,14 @@
+# editors
+~*
+.*.swp
+\#*
+.#*
+
+# py
+__pycache__
+*.pyc
+*.pyo
+
+# misc
+*.temp
+
