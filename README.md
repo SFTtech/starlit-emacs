@@ -10,6 +10,9 @@
 Starlit customizes your Emacs to be deep blue with bright colors from a starlit sky.
 
 
+[![Screenshot](assets/screenshot_cpp_py.png)](assets/screenshot_cpp_py.png)
+
+
 ## Installation
 
 ### Spacemacs
