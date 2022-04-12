@@ -265,7 +265,7 @@ in the theme."
        `(org-agenda-dimmed-todo-face ((,colorful (:foreground ,.comment))))
        `(org-agenda-done ((,colorful (:foreground ,.green))))
        `(org-agenda-structure ((,colorful (:foreground ,.purple))))
-       `(org-block ((,colorful (:foreground ,.orange :background ,.block))))
+       `(org-block ((,colorful (:foreground ,.foreground :background ,.block))))
        `(org-code ((,colorful (:foreground ,.yellow))))
        `(org-column ((,colorful (:background ,.current-line))))
        `(org-column-title ((,colorful (:inherit org-column :weight bold :underline t))))
