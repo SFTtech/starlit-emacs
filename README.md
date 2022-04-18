@@ -134,4 +134,4 @@ In case you didn't know anyway, you can report [issues](https://github.com/SFTte
 ## License
 
 This theme is distributed under the GNU General Public License, version 3 or later.
-See the [LICENSE](LICENSE) and [COPYING](COPYING) notice.
+See the [LICENSE](LICENSE) and [authors list](authors.md).
