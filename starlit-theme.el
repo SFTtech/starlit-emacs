@@ -300,6 +300,7 @@ in the theme."
        `(org-scheduled-today ((,colorful (:foreground ,.green))))
        `(org-special-keyword ((,colorful (:foreground ,.orange))))
        `(org-table ((,colorful (:foreground ,.purple))))
+       `(org-tag ((,colorful (:foreground ,.comment))))
        `(org-todo ((,colorful (:foreground ,.red))))
        `(org-upcoming-deadline ((,colorful (:foreground ,.orange))))
        `(org-warning ((,colorful (:weight bold :foreground ,.red))))
