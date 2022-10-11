@@ -277,6 +277,7 @@ in the theme."
        `(org-document-info-keyword ((,colorful (:foreground ,.green))))
        `(org-document-title ((,colorful (:weight bold :foreground ,.orange :height 1.45))))
        `(org-done ((,colorful (:foreground ,.green))))
+       `(org-drawer ((,colorful (:foreground ,.bluedark))))
        `(org-ellipsis ((,colorful (:foreground ,.comment))))
        `(org-footnote ((,colorful (:foreground ,.aqua))))
        `(org-formula ((,colorful (:foreground ,.red))))
