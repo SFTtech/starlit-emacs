@@ -1,6 +1,6 @@
 ;;; starlit-theme.el --- Deep blue dark theme with bright colors from the starlit sky  -*- lexical-binding: t -*-
 
-;; Copyright (C) 2022-2022
+;; Copyright (C) 2022-2023
 
 ;; Author: Jonas Jelten <jj@sft.lol>
 ;; Keywords: faces
@@ -420,7 +420,7 @@ in the theme."
 
 ;; Local Variables:
 ;; indent-tabs-mode: nil
-;; rainbow-mode: t
+;; eval: (rainbow-mode 1)
 ;; End:
 
 ;;; starlit-theme.el ends here
