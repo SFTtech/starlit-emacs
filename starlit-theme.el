@@ -155,6 +155,8 @@ in the theme."
        `(secondary-selection ((,colorful (:background ,.current-line))))
        `(shadow ((,colorful (:foreground ,.comment))))
        `(success ((,colorful (:foreground ,.greenlight))))
+       `(tab-bar ((,colorful (:foreground ,.foreground :background ,.backgroundlight))))
+       `(tooltip ((,colorful (:foreground ,.foreground :background ,.backgroundgreen))))
        `(underline ((,colorful (:underline t))))
        `(warning ((,colorful (:foreground ,.orange))))
 
