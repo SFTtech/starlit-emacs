@@ -367,6 +367,7 @@ in the theme."
        `(undo-tree-visualizer-current-face ((,colorful (:foreground ,.green :weight bold))))
        `(undo-tree-visualizer-default-face ((,colorful (:foreground ,.foreground))))
        `(undo-tree-visualizer-register-face ((,colorful (:foreground ,.yellow))))
+       `(vertico-current ((,colorful (:background ,.backgroundgreenhighlight))))
        `(which-func ((,colorful (:foreground ,.blue :background unspecified))))
        `(whitespace-empty ((,colorful (:foreground ,.red :inverse-video t :underline nil))))
        `(whitespace-hspace ((,colorful (:background unspecified :foreground ,.selection))))
