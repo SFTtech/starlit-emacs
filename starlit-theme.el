@@ -414,7 +414,12 @@ in the theme."
          (340 . ,.yellow)
          (360 . ,.green)))
      `(ansi-color-names-vector (vector ,.foreground ,.red ,.green ,.yellow ,.blue ,.purple ,.aqua ,.background))
-     '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])))))
+     '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
+     `(evil-emacs-state-cursor '(,.greenlight bar))
+     `(evil-normal-state-cursor '(,.gold box))
+     `(evil-insert-state-cursor '(,.bluelight bar))
+     `(evil-replace-state-cursor '(,.softred hbar))
+     `(evil-visual-state-cursor '(,.orange hollow))))))
 
 
 ;;;###autoload
