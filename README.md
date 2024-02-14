@@ -15,11 +15,20 @@ Starlit customizes your Emacs to be deep blue with bright colors from a starlit 
 
 ## Installation
 
+### Doom Emacs
+
+in `packages.el`: `(package! starlit-theme)`
+
+in your config:
+``` elisp
+(setq doom-theme 'starlit)
+```
+
 ### Spacemacs
 
 Spacemacs automatically uses and installs `starlit` when you add it to the theme list:
 
-```lisp
+``` elisp
 ;; within your dotspacemacs/init function, set:
 dotspacemacs-themes '(starlit
                       ...other themes)
@@ -37,7 +46,7 @@ M-x package-install starlit-theme
 
 To load the theme on Emacs startup:
 
-```lisp
+``` elisp
 (load-theme 'starlit t)
 ```
 
@@ -50,7 +59,7 @@ This path then needs to be loaded within your emacs config:
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/starlit-emacs")
 ```
 
-Alternatively, this snippet discovers all theme directories in `~/.emacs.d/themes/`:
+Alternatively, use this snippet to discover all theme directories in `~/.emacs.d/themes/`:
 
 ```elisp
 (let ((basedir (locate-user-emacs-file "themes/")))
@@ -122,7 +131,7 @@ Everyone who contributed is likely listed [here](https://github.com/SFTtech/star
 ## Contact
 
 If you have questions, suggestions, encounter any problem,
-please join our [Matrix](https://matrix.org) channel and ask!
+please join our [Matrix](https://matrix.to/#/#sfttech:matrix.org) channel and ask!
 
 ```
 #sfttech:matrix.org
