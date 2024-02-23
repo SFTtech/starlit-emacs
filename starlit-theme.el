@@ -131,7 +131,7 @@ in the theme."
       (custom-theme-set-faces
        'starlit
 
-       ;;; general faces
+       ;;; basic faces
        `(bold ((,colorful (:weight bold))))
        `(bold-italic ((,colorful (:slant italic :weight bold))))
        `(border ((,colorful (:background ,.current-line))))
