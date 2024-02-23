@@ -144,7 +144,7 @@ in the theme."
        `(italic ((,colorful (:slant italic))))
        `(header-line ((,colorful (:inherit mode-line :foreground ,.purple :background unspecified))))
        `(highlight ((,colorful (:background ,.backgroundlight :foreground ,.white))))
-       `(hl-line ((,colorful (:inverse-video nil :background ,.current-line))))
+       `(hl-line ((,colorful (:background ,.current-line))))
        `(lazy-highlight ((,colorful (:distant-foreground ,.white :background ,.backgroundhighlight))))
        `(line-number ((,colorful (:inherit default :foreground ,.shadow))))
        `(line-number-current-line ((,colorful (:inherit line-number :background ,.current-line))))
