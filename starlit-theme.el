@@ -52,7 +52,7 @@ and foreground colors optimized for happy programming.")
 Each element has the form (NAME . HEX).")
 
 (setq starlit-default-colors
-      '(("current-line"                . "#0a121a")
+      '(("current-line"                . "#0a020a")
         ("block"                       . "#11151e")
         ("background"                  . "#131729")
         ("backgroundlight"             . "#161930")
