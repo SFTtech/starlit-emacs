@@ -245,7 +245,7 @@ in the theme."
        `(helm-selection ((,colorful (:background ,.backgroundgreenhighlight))))
        `(helm-selection-line ((,colorful (:inherit highlight))))
        `(helm-source-header ((,colorful (:inherit helm-header :foreground ,.foreground :background ,.bluedark :weight bold :box nil :height 1.2 :extend t))))
-       `(hl-line ((,colorful (:inherit highlight :background ,.current-line))))
+       `(hl-line ((,colorful (:background ,.current-line))))
        `(hl-sexp-face ((,colorful (:background ,.current-line))))
        `(idle-highlight ((((supports underline)) (:underline t))))
        `(ido-first-match ((,colorful (:foreground ,.orange))))
